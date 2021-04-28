@@ -1,8 +1,8 @@
 import pygame
 
 WIDTH, HEIGHT = 900, 500
-
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("First Game!")
 
 def main():
 
@@ -11,6 +11,8 @@ def main():
     for event in pygame.event.get():
       if event.type == pygame.QUIT:
         run = False
+
+      WIN.fill((25, 56, 78))
   pygame.quit()
 
 if __name__ == "__main__":
